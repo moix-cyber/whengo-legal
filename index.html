@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WhenGO — Zásady ochrany osobních údajů</title>
+  <style>
+    :root {
+      --bg: #0F0F13;
+      --card: #13131E;
+      --border: #1E1E30;
+      --primary: #5C6EFF;
+      --text: #E0E0F0;
+      --muted: #8888AA;
+      --accent: #3DD6F5;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      padding: 0 20px 80px;
+    }
+    header {
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 48px auto 0;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--text);
+      letter-spacing: -0.8px;
+      margin-bottom: 8px;
+    }
+    .updated {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 36px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    p {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+    li {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    li b, p b {
+      color: var(--text);
+      font-weight: 600;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 22px;
+      margin: 20px 0;
+    }
+    .card p { margin-bottom: 0; }
+    .highlight {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 12px;
+      color: #44445A;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <span class="logo">WhenGO</span>
+</header>
+
+<div class="container">
+
+  <h1>Zásady ochrany osobních údajů</h1>
+  <p class="updated">Poslední aktualizace: 27. května 2025</p>
+
+  <div class="card">
+    <p>WhenGO respektuje vaše soukromí. Tato stránka vysvětluje, jaké informace shromažďujeme, jak je používáme a jaká máte práva.</p>
+  </div>
+
+  <h2>1. Kdo jsme</h2>
+  <p>WhenGO je mobilní aplikace pro koordinaci skupinových plánů a dostupnosti. Správcem osobních údajů je vývojář aplikace.</p>
+  <p>Kontakt: <a href="mailto:support@whengo.app">support@whengo.app</a></p>
+
+  <h2>2. Jaké údaje shromažďujeme</h2>
+  <p>Shromažďujeme pouze údaje nezbytné pro fungování aplikace:</p>
+  <ul>
+    <li><b>E-mailová adresa</b> — pro vytvoření účtu a přihlášení</li>
+    <li><b>Uživatelské jméno</b> — zobrazuje se ostatním členům skupiny</li>
+    <li><b>Data dostupnosti</b> — dny, které označíte jako dostupné nebo nedostupné</li>
+    <li><b>Token pro push notifikace</b> — pro zasílání upozornění (pouze pokud udělíte souhlas)</li>
+    <li><b>Členství ve skupinách</b> — skupiny, které jste vytvořili nebo do kterých jste byli pozváni</li>
+  </ul>
+
+  <h2>3. Jak údaje používáme</h2>
+  <p>Vaše údaje používáme výhradně pro:</p>
+  <ul>
+    <li>Provoz aplikace a synchronizaci dat mezi členy skupiny</li>
+    <li>Odesílání push notifikací (pouze se souhlasem)</li>
+    <li>Zabezpečení účtu a ochranu před neoprávněným přístupem</li>
+  </ul>
+  <p><span class="highlight">Vaše údaje nikdy neprodáváme, nepronajímáme ani nesdílíme s třetími stranami pro reklamní účely.</span></p>
+
+  <h2>4. Sdílení dat s ostatními uživateli</h2>
+  <p>V rámci skupiny jsou ostatním členům viditelné:</p>
+  <ul>
+    <li>Vaše <b>uživatelské jméno</b></li>
+    <li>Vaše <b>data dostupnosti</b> (které dny jste označili)</li>
+  </ul>
+  <p>E-mailová adresa není ostatním členům skupiny nikdy zobrazována.</p>
+
+  <h2>5. Kde jsou data uložena</h2>
+  <p>Data jsou uložena v zabezpečené cloudové databázi <b>Supabase</b> (provozované na serverech v EU). Přenos dat je šifrován pomocí HTTPS/TLS.</p>
+
+  <h2>6. Push notifikace</h2>
+  <p>Aplikace může zasílat push notifikace (např. při pozvání do skupiny). Tato funkce je <b>volitelná</b> — souhlas lze kdykoliv odvolat v nastavení vašeho telefonu.</p>
+
+  <h2>7. Uchovávání dat</h2>
+  <p>Vaše data jsou uchovávána po dobu existence vašeho účtu. Po smazání účtu jsou všechna osobní data trvale odstraněna do 30 dnů.</p>
+
+  <h2>8. Vaše práva (GDPR)</h2>
+  <p>Máte právo:</p>
+  <ul>
+    <li><b>Na přístup</b> — požádat o kopii vašich dat</li>
+    <li><b>Na opravu</b> — opravit nesprávné údaje</li>
+    <li><b>Na výmaz</b> — nechat smazat svůj účet a všechna data</li>
+    <li><b>Na přenositelnost</b> — obdržet data ve strojově čitelném formátu</li>
+    <li><b>Na omezení zpracování</b> — omezit způsob zpracování vašich dat</li>
+  </ul>
+  <p>Pro uplatnění těchto práv nás kontaktujte na <a href="mailto:support@whengo.app">support@whengo.app</a>.</p>
+
+  <h2>9. Děti</h2>
+  <p>Aplikace WhenGO není určena dětem mladším 13 let. Vědomě neshromažďujeme údaje od osob mladších 13 let.</p>
+
+  <h2>10. Změny těchto zásad</h2>
+  <p>O případných změnách vás budeme informovat prostřednictvím aplikace nebo e-mailem. Datum poslední aktualizace je vždy uvedeno v záhlaví této stránky.</p>
+
+  <h2>11. Kontakt</h2>
+  <div class="card">
+    <p>Máte otázky ohledně ochrany soukromí? Napište nám:<br>
+    <a href="mailto:support@whengo.app">support@whengo.app</a></p>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 WhenGO. Všechna práva vyhrazena.
+</footer>
+
+</body>
+</html>
